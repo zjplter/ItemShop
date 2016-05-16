@@ -1,38 +1,74 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Home</title>
-		<!-- Custom Theme files -->
-		<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-		<!-- Custom Theme files -->
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="" />
-		<!--Google Fonts-->
-		<link href='http://fonts.useso.com/css?family=Roboto:500,900italic,900,400italic,100,700italic,300,700,500italic,100italic,300italic,400' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.useso.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-		<div class="login">
-			<h2>Acced Form</h2>
-			<div class="login-top">
-				<h1>LOGIN FORM</h1>
-				<form>
-					<input type="text" value="User Id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Id';}">
-					<input type="password" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}">
-				</form>
-				<div class="forgot">
-					<a href="#">forgot Password</a>
-					<input type="submit" value="Login" >
-				</div>
-			</div>
-			<div class="login-bottom">
-				<h3>New User &nbsp;<a href="#">Register</a>&nbsp Here</h3>
-			</div>
-		</div>
-		<div class="copyright">
-			<p>Copyright &copy; 2015.Company name All rights reserved.</p>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Shop Page Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style type="text/css">
+		body {
+			  padding-top: 40px;
+			  padding-bottom: 40px;
+			  background-color: #eee;
+			}
+
+			.form-signin {
+			  max-width: 330px;
+			  padding: 15px;
+			  margin: 0 auto;
+			}
+			.form-signin .form-signin-heading,
+			.form-signin .checkbox {
+			  margin-bottom: 10px;
+			}
+			.form-signin .checkbox {
+			  font-weight: normal;
+			}
+			.form-signin .form-control {
+			  position: relative;
+			  height: auto;
+			  -webkit-box-sizing: border-box;
+			     -moz-box-sizing: border-box;
+			          box-sizing: border-box;
+			  padding: 10px;
+			  font-size: 16px;
+			}
+			.form-signin .form-control:focus {
+			  z-index: 2;
+			}
+			.form-signin input[type="email"] {
+			  margin-bottom: -1px;
+			  border-bottom-right-radius: 0;
+			  border-bottom-left-radius: 0;
+			}
+			.form-signin input[type="password"] {
+			  margin-bottom: 10px;
+			  border-top-left-radius: 0;
+			  border-top-right-radius: 0;
+			}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form class="form-signin">
+	            <h2 class="form-signin-heading">Please sign in</h2>
+	            <label for="inputEmail" class="sr-only">Email address</label>
+	            	<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+	            <label for="inputPassword" class="sr-only">Password</label>
+	            	<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+	            <div class="checkbox">
+	              <label>
+	                 <input type="checkbox" value="remember-me"> Remember me
+	              </label>
+	            </div>
+	            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          	</form>
+        </div>
+         <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src="js/jquery.min.js"></script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="js/bootstrap.min.js"></script>   
+    </body>
 </html>
