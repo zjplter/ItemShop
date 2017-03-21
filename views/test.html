@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="../css/jquery.multiselect2side.css" type="text/css"  />
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.multiselect2side.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+		     $('#searchable').multiselect2side({
+				 search: "待选区   搜索：" ,
+				 selectedPosition: 'right',   
+				 moveOptions: false,   
+				 labelsx: '待选区',   
+				 labeldx: '已选区'				
+		     });		
+		});
+	</script>
+	</head>
+
+	<body>
+		<table>
+	       <tr>
+			   <td>
+			 	<select name="searchable[]" id='searchable' multiple='multiple' >
+				 	 <option value="超级管理员1">超级管理员</option>
+	                 <option value="普通管理员2">普通管理员</option>
+	                 <option value="信息发布员3">信息发布员</option>
+	                 <option value="财务管理员4">财务管理员</option>
+	                 <option value="产品管理员5">产品管理员</option>
+	                 <option value="资源管理员6">资源管理员</option>
+	                 <option value="管理员7">管理员</option>
+				</select>
+			   </td>
+	       </tr>
+	       <tr>
+		   	   <td><p id="stat"></p></td>
+       	   </tr>
+   		</table>
+	</body>
+</html>
