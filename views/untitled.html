@@ -8,29 +8,25 @@
         .active{background: yellow;}
     </style>
     <script type="text/javascript">
-    window.onload=function () 
-    {
-        var oDiv=document.getElementById('div1');
-        var iBut=oDiv.getElementsByTagName('input');
-        var aDiv=oDiv.getElementsByTagName('div');
-        for(i in iBut)
-        {
-            iBut[i].index=i;
-            iBut[i].onclick=function()
-            {
-                for(j in iBut)
-                {
-                    console.log(j);
-                    iBut[j].className="";
-                    if(j<=3 && typeof(aDiv[j].style) != "undefined") {
-                        aDiv[j].style.display="none";
+        window.onload=function () {
+            var oDiv=document.getElementById('div1');
+            var iBut=oDiv.getElementsByTagName('input');
+            var aDiv=oDiv.getElementsByTagName('div');
+            for(i in iBut) {
+                iBut[i].index=i;
+                iBut[i].onclick=function() {
+                    for(j in iBut) {
+                        console.log(j);
+                        iBut[j].className="";
+                        if(j<=3 && typeof(aDiv[j].style) != "undefined") {
+                            aDiv[j].style.display="none";
+                        }
                     }
+                    this.className="active";
+                    aDiv[this.index].style.display="block";
                 }
-                this.className="active";
-                aDiv[this.index].style.display="block";
             }
         }
-    }
     </script>
 </head>
 <body>
